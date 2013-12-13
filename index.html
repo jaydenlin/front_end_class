@@ -1,0 +1,33 @@
+ <!doctype html>
+<html>
+<head>
+    <title>My Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="yui/build/yui/yui-min.js"></script>
+    <script src="test.js"></script>
+</head>
+<body>
+  <div id="test">
+    <p>I am floated</p>
+    <p>So am I</p>
+  </div>
+
+    
+</body>
+<script>
+    
+    YUI().use('node', 'event','dd-drag','dom-core', function (Y) {
+        
+    // The Node and Event modules are loaded and ready to use.
+    // Your code goes here!
+         
+      Y.one("#test").on("click",function(e){
+         console.log(Y.DOM);
+         
+      });
+    });
+    
+    
+        
+</script>
+</html>

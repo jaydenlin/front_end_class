@@ -2,27 +2,34 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.14.0/build/cssreset/cssreset-min.css">
     <style>
-        .nav{
-            
-        
+        #nav{
+           width:900px;    
+           margin: 0px auto;
+           background-image:url(http://josephj.com/training/ncu/bg_nav.png);    
         }
-        .bd{
-        
-        
+        #nav .bd li{
+            float:left;
+            border-right:solid 1px #ccc;
         }
-        .bd{
-        
-        
+        #nav .bd li a{
+            padding:10px;
+            display:block;
+            zoom:1;
+            text-decoration:none;
+            color:#fff;
         }
-        .bd:after{
+        #nav .bd li a:hover{
+        
+            background-color:#cfc;
+        }
+        #nav .bd:after{
            content:"";
            clear:both;    
            display:block;
            zoom:1;    
         }
-        
-        
     </style>
 </head>
 

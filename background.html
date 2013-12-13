@@ -9,11 +9,22 @@
            margin: 0px auto;
            background-image:url(http://josephj.com/training/ncu/bg_nav.png);    
         }
+        /*use inline block instead of float left*/
+       
         #nav .bd li{
-            float:left;
-            border-right:solid 1px #ccc;
+           display:inline-block;
+           zoom:1;
+           *display:inline;
+           vertical-align:top;
+           border-right:solid 1px #ccc;
         }
+        /*have to fix little space between inline elements*/
+        #nav .bd{
+           letter-spacing:-0.5em; /*add this at parent*/
+        }
+        
         #nav .bd li a{
+            letter-spacing:normal; /*add this to reset children*/
             padding:10px;
             display:block;
             zoom:1;
@@ -23,12 +34,6 @@
         #nav .bd li a:hover{
         
             background-color:#cfc;
-        }
-        #nav .bd:after{
-           content:"";
-           clear:both;    
-           display:block;
-           zoom:1;    
         }
     </style>
 </head>
